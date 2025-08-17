@@ -167,7 +167,7 @@ const ContactSection = () => {
                   asChild
                 >
                   <a 
-                    href="https://api.whatsapp.com/send?1=pt_BR&phone=5511997907708" 
+                    href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2"
