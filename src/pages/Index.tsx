@@ -5,6 +5,7 @@ import DifferentialsSection from "@/components/DifferentialsSection";
 import ServicesSection from "@/components/ServicesSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { Slider } from "@/components/Slider";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <Slider />
         <AboutSection />
         <DifferentialsSection />
         <ServicesSection />

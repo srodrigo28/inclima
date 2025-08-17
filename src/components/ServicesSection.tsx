@@ -131,7 +131,7 @@ const ServicesSection = () => {
               Nossa equipe está pronta para atender você com excelência.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" asChild>
+              <Button variant="hero" size="lg" asChild className="bg-blue-500">
                 <a href="#contato" className="inline-flex items-center gap-2">
                   <ChevronRight className="h-5 w-5" />
                   Solicitar Orçamento

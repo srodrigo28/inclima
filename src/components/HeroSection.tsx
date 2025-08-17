@@ -27,10 +27,10 @@ const HeroSection = () => {
           <Button 
             variant="hero" 
             size="lg"
-            className="animate-scale-in"
+            className="animate-scale-in bg-blue-500"
             asChild
           >
-            <a href="#contato" className="inline-flex items-center gap-2">
+            <a href="#contato" className="inline-flex items-center gap-2 bg-blue-500">
               <ChevronRight className="h-5 w-5" />
               SOLICITE UM ORÇAMENTO
             </a>

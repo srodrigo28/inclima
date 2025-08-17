@@ -115,7 +115,7 @@ const ContactSection = () => {
                     />
                   </div>
                   
-                  <Button variant="hero" size="lg" className="w-full">
+                  <Button variant="hero" size="lg" className="w-full bg-blue-500">
                     Enviar Solicitação
                   </Button>
                 </form>
