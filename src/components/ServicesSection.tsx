@@ -138,7 +138,11 @@ const ServicesSection = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="tel:+5511997907708" className="inline-flex items-center gap-2">
+                <a className="inline-flex items-center gap-2"
+                  href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Phone className="h-5 w-5" />
                   Ligar Agora
                 </a>

@@ -30,9 +30,13 @@ const HeroSection = () => {
             className="animate-scale-in bg-blue-500"
             asChild
           >
-            <a href="#contato" className="inline-flex items-center gap-2 bg-blue-500">
+            <a className="inline-flex items-center gap-2 bg-blue-500"
+              href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ChevronRight className="h-5 w-5" />
-              SOLICITE UM ORÇAMENTO
+              SOLICITE UM ORÇAMENTO RÁPIDO
             </a>
           </Button>
         </div>
