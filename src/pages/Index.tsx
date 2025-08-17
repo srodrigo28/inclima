@@ -19,15 +19,15 @@ const Index = () => {
         <DifferentialsSection />
         <ServicesSection />
         <ContactSection />
-        <div className="bg-green-500 animate-pulse md:w-44 w-12 h-12 
-            flex items-center justify-center fixed bottom-10 
-            md:right-10 right-2 rounded-full">
-          <FaWhatsapp className="text-white mx-auto" size={26} />
+        <div className="bg-green-500 animate-pulse md:w-32 w-12 h-12 
+            flex items-center md:gap-2 justify-center fixed md:bottom-10 bottom-2 
+            md:right-10 right-2 rounded-full z-10">
+          <FaWhatsapp className="text-white" size={26} />
           <a
             href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-white"
+            className="inline-flex items-center text-white"
           >
             <span className="hidden md:flex">Contato</span>
           </a>

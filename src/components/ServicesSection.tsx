@@ -41,7 +41,7 @@ const ServicesSection = () => {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Climatização
+            Ar-Condicionados
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
