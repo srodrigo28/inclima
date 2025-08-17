@@ -19,9 +19,10 @@ const Index = () => {
         <DifferentialsSection />
         <ServicesSection />
         <ContactSection />
-        <button className="bg-green-500 animate-pulse md:w-44 w-12 h-12 flex items-center 
-        gap-2 justify-center fixed bottom-10 md:right-10 right-2 rounded-full">
-          <FaWhatsapp className="text-white" size={26} />
+        <div className="bg-green-500 animate-pulse md:w-44 w-12 h-12 
+            flex items-center justify-center fixed bottom-10 
+            md:right-10 right-2 rounded-full">
+          <FaWhatsapp className="text-white mx-auto" size={26} />
           <a
             href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673"
             target="_blank"
@@ -30,7 +31,7 @@ const Index = () => {
           >
             <span className="hidden md:flex">Contato</span>
           </a>
-        </button>
+        </div>
       </main>
       <Footer />
     </div>
