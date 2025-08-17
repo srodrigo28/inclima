@@ -13,32 +13,38 @@ interface PortfolioItem {
 }
 
 const portfolioItems: PortfolioItem[] = [
-  {
+   {
     id: 1,
+    title: "Hospital Santa Bárbara",
+    image: "assets/parceiros/hospital-sata.webp",
+    description: "Hospital Santa Bárbara GO",
+  },
+  {
+    id: 2,
     title: "Kalunga",
     image: "assets/parceiros/kalunga.jpg",
     description: "Loja de Informática em geral",
   },
   {
-    id: 2,
+    id: 3,
     title: "Ri Happy",
     image: "assets/parceiros/ri-happy.jpg",
     description: "Loja de Brinquedos",
   },
   {
-    id: 3,
+    id: 4,
     title: "Banco de Olhos",
     image: "assets/parceiros/banco-de-olhos.png",
     description: "Hospital banco de Olhos de Goiânia",
   },
   {
-    id: 4,
+    id: 5,
     title: "Casa Fleur",
     image: "assets/parceiros/casa-fleur.webp",
     description: "Sua loja de mesa posta e decoração em Goiânia",
   },
   {
-    id: 5,
+    id: 6,
     title: "Ri Happy 2",
     image: "assets/parceiros/ri_happy_2.webp",
     description: "Loja de Brinquedos Passeio das Águas Shopping",
@@ -108,7 +114,7 @@ export function Slider() {
           </p>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-[1920px] mx-auto">
           {/* Carousel Container */}
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
@@ -145,19 +151,19 @@ export function Slider() {
           <Button
             variant="outline"
             size="icon"
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-transparent hover:bg-white shadow-lg border-none"
             onClick={scrollPrev}
           >
-            <ChevronLeft className="h-4 w-4" />
+            <ChevronLeft className="h-10 w-10 text-white font-bold hover:text-blue-600" size={20}/>
           </Button>
 
           <Button
             variant="outline"
             size="icon"
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-transparent hover:bg-white border-none"
             onClick={scrollNext}
           >
-            <ChevronRight className="h-4 w-4" />
+            <ChevronRight className="h-4 w-4 text-white hover:text-blue-600" size={20}  />
           </Button>
 
           {/* Dots Navigation */}
