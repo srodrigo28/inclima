@@ -34,8 +34,8 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 4,
     title: "Banco de Olhos",
-    image: "assets/parceiros/banco-de-olhos.png",
-    description: "Hospital banco de Olhos de Goiânia",
+    image: "assets/parceiros/instuto-olhos.jfif",
+    description: "Instituto de olhos de Goiânia",
   },
   {
     id: 5,

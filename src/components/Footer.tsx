@@ -67,7 +67,7 @@ const Footer = () => {
             <div>
               © 2025 Grupo InClima Ar Condicionado. Todos os direitos reservados.
             </div>
-            <div className="mt-4 md:mt-0">
+            <div className="mt-4 md:mt-0 hidden md:flex">
               Desenvolvido com ❤️ para seu conforto
             </div>
           </div>
