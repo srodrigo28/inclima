@@ -16,7 +16,7 @@ const portfolioItems: PortfolioItem[] = [
    {
     id: 1,
     title: "Hospital Santa Bárbara",
-    image: "assets/parceiros/hospital-sata.webp",
+    image: "assets/parceiros/hospital-santa.jpg",
     description: "Hospital Santa Bárbara GO",
   },
   {
