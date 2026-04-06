@@ -1,7 +1,6 @@
 import type { PortfolioLocation } from "@/types/portfolio";
+import { contactConfig } from "@/config/contact";
 import { buildWhatsAppUrl, formatPhone, hasPhoneContact } from "@/utils/phone";
-
-const centralWhatsAppUrl = "https://wa.me/5562991025673";
 
 function createLocation(
   id: string,
@@ -18,7 +17,7 @@ function createLocation(
     phone: formatPhone(rawPhone),
     whatsappUrl: hasPhoneContact(rawPhone)
       ? buildWhatsAppUrl(rawPhone)
-      : centralWhatsAppUrl,
+      : contactConfig.whatsappWaUrl,
     imagePath,
     city,
     hasDirectContact: hasPhoneContact(rawPhone),

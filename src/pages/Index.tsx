@@ -6,6 +6,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { Slider } from "@/components/Slider";
+import { contactConfig } from "@/config/contact";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Index = () => {
@@ -24,7 +25,7 @@ const Index = () => {
             md:right-10 right-2 rounded-full z-10">
           <FaWhatsapp className="text-white" size={26} />
           <a
-            href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673"
+            href={contactConfig.whatsappApiUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-white"

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { contactConfig } from "@/config/contact";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -10,14 +11,14 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Telefone",
-      info: "62 99102-5673",
-      link: "tel:+5562991025673"
+      info: contactConfig.phoneDisplay,
+      link: contactConfig.telUrl
     },
     {
       icon: Mail,
       title: "E-mail",
-      info: "comercial@grupoinclima.com.br",
-      link: "mailto:comercial@grupoinclima.com.br"
+      info: contactConfig.email,
+      link: contactConfig.mailtoUrl
     },
     {
       icon: MapPin,
@@ -167,7 +168,7 @@ const ContactSection = () => {
                   asChild
                 >
                   <a 
-                    href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673" 
+                    href={contactConfig.whatsappApiUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2"

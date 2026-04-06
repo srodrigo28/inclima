@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import BrandName from "@/components/BrandName";
+import { contactConfig } from "@/config/contact";
 import logo from "@/assets/logo.png";
 import {
   Phone,
@@ -42,7 +43,7 @@ const Header = () => {
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>62 99102-5673</span>
+                <span>{contactConfig.phoneDisplay}</span>
               </div>
               <div className="md:flex items-center gap-2 hidden">
                 <Clock className="h-4 w-4" />

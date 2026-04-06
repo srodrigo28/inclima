@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { contactConfig } from "@/config/contact";
 import { Wrench, Settings, Droplets, Thermometer, ChevronRight, ArrowRight, Phone } from "lucide-react";
 
 const ServicesSection = () => {
@@ -139,7 +140,7 @@ const ServicesSection = () => {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a className="inline-flex items-center gap-2"
-                  href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673"
+                  href={contactConfig.whatsappApiUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

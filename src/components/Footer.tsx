@@ -1,5 +1,6 @@
 import logo from "@/assets/logo.png";
 import BrandName from "@/components/BrandName";
+import { contactConfig } from "@/config/contact";
 import { useLocation } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
@@ -27,11 +28,11 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>62 99102-5673</span>
+                <span>{contactConfig.phoneDisplay}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>comercial@grupoinclima.com.br</span>
+                <span>{contactConfig.email}</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />

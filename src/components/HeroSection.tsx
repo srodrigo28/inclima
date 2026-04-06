@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { contactConfig } from "@/config/contact";
 import heroBackground from "@/assets/hero-background.jpg";
 import { ChevronRight } from "lucide-react";
 
@@ -31,7 +32,7 @@ const HeroSection = () => {
             asChild
           >
             <a className="inline-flex items-center gap-2 bg-blue-500"
-              href="https://api.whatsapp.com/send?1=pt_BR&phone=5562991025673"
+              href={contactConfig.whatsappApiUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
