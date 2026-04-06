@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 import {
@@ -12,17 +13,23 @@ import {
   Settings,
   Image,
   Users,
+  Briefcase,
 } from "lucide-react";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isPortfolioPage = pathname === "/portfolio";
+
+  const homeAnchor = (hash: string) => (isPortfolioPage ? `/${hash}` : hash);
 
   const navItems = [
-    { name: "HOME", href: "#home", icon: <Home className="h-4 w-4" /> },
-    { name: "DIFERENCIAIS", href: "#diferenciais", icon: <Sparkles className="h-4 w-4" /> },
-    { name: "SERVIÇOS", href: "#servicos", icon: <Settings className="h-4 w-4" /> },
-    { name: "CLIENTES", href: "#clientes", icon: <Users className="h-4 w-4" /> },
-    { name: "CONTATO", href: "#contato", icon: <Image className="h-4 w-4" /> },
+    { name: "HOME", href: homeAnchor("#home"), icon: <Home className="h-4 w-4" /> },
+    { name: "DIFERENCIAIS", href: homeAnchor("#diferenciais"), icon: <Sparkles className="h-4 w-4" /> },
+    { name: "SERVIÇOS", href: homeAnchor("#servicos"), icon: <Settings className="h-4 w-4" /> },
+    { name: "PORTFÓLIO", href: "/portfolio", icon: <Briefcase className="h-4 w-4" /> },
+    { name: "CLIENTES", href: homeAnchor("#clientes"), icon: <Users className="h-4 w-4" /> },
+    { name: "CONTATO", href: homeAnchor("#contato"), icon: <Image className="h-4 w-4" /> },
   ];
 
   return (

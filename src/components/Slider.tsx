@@ -108,10 +108,15 @@ export function Slider() {
     <section id="clientes" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Meu Portfólio</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+            Conheça alguns dos nosso clientes
+          </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Conheça alguns dos meus projetos mais recentes e impactantes
+            Veja alguns atendimentos em destaque e acesse a nova vitrine completa do portfólio.
           </p>
+          <Button asChild className="mt-6">
+            <a href="/portfolio">Ver portfólio completo</a>
+          </Button>
         </div>
 
         <div className="relative max-w-[1920px] mx-auto">

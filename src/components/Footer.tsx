@@ -1,7 +1,12 @@
 import logo from "@/assets/logo.png";
+import { useLocation } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
+  const { pathname } = useLocation();
+  const isPortfolioPage = pathname === "/portfolio";
+  const homeAnchor = (hash: string) => (isPortfolioPage ? `/${hash}` : hash);
+
   return (
     <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 py-12">
@@ -42,9 +47,10 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 text-white">Serviços</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="#servicos" className="hover:text-primary transition-smooth">Instalação de Ar-condicionado</a></li>
-              <li><a href="#servicos" className="hover:text-primary transition-smooth">Manutenção Preventiva</a></li>
-              <li><a href="#servicos" className="hover:text-primary transition-smooth">Limpeza e Higienização</a></li>
+              <li><a href={homeAnchor("#servicos")} className="hover:text-primary transition-smooth">Instalação de Ar-condicionado</a></li>
+              <li><a href={homeAnchor("#servicos")} className="hover:text-primary transition-smooth">Manutenção Preventiva</a></li>
+              <li><a href={homeAnchor("#servicos")} className="hover:text-primary transition-smooth">Limpeza e Higienização</a></li>
+              <li><a href="/portfolio" className="hover:text-primary transition-smooth">Portfólio</a></li>
             </ul>
           </div>
 
@@ -52,11 +58,12 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 text-white">Links Rápidos</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li><a href="#home" className="hover:text-primary transition-smooth">Home</a></li>
-              <li><a href="#sobre" className="hover:text-primary transition-smooth">Quem Somos</a></li>
-              <li><a href="#diferenciais" className="hover:text-primary transition-smooth">Diferenciais</a></li>
-              <li><a href="#servicos" className="hover:text-primary transition-smooth">Serviços</a></li>
-              <li><a href="#contato" className="hover:text-primary transition-smooth">Contato</a></li>
+              <li><a href={homeAnchor("#home")} className="hover:text-primary transition-smooth">Home</a></li>
+              <li><a href={homeAnchor("#sobre")} className="hover:text-primary transition-smooth">Quem Somos</a></li>
+              <li><a href={homeAnchor("#diferenciais")} className="hover:text-primary transition-smooth">Diferenciais</a></li>
+              <li><a href={homeAnchor("#servicos")} className="hover:text-primary transition-smooth">Serviços</a></li>
+              <li><a href="/portfolio" className="hover:text-primary transition-smooth">Portfólio</a></li>
+              <li><a href={homeAnchor("#contato")} className="hover:text-primary transition-smooth">Contato</a></li>
             </ul>
           </div>
         </div>
