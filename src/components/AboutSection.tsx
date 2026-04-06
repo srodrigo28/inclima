@@ -8,17 +8,17 @@ const AboutSection = () => {
     {
       icon: Target,
       title: "Nossa Missão",
-      description: "Entre nossos muitos objetivos, o maior deles com certeza é entregar o nosso melhor ao cliente e prestar nossos serviços com Prima Excelência em todos os aspectos."
+      description: "Entre nossos muitos objetivos, o principal é entregar o nosso melhor ao cliente e prestar nossos serviços com excelência em todos os aspectos."
     },
     {
       icon: Eye,
       title: "Nossa Visão",
-      description: "Ar-Condicionado: Promover o melhor conforto térmico para nossos clientes com melhor eficiência e excelência possível. Ar condicionado: Entregar as melhores soluções aos nossos clientes com agilidade e eficácia."
+      description: "Promover conforto térmico aos nossos clientes com eficiência e excelência, entregando as melhores soluções com agilidade e eficácia."
     },
     {
       icon: Heart,
       title: "Nossos Valores",
-      description: "Dentre o que valorizamos temos como nossa trindade o Comprometimento, Respeito e Segurança. Além do amor que temos com a profissão e os resultados."
+      description: "Nossos principais valores são comprometimento, respeito e segurança, além da paixão pela profissão e pelos resultados."
     }
   ];
 
@@ -32,7 +32,7 @@ const AboutSection = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Somos uma equipe dedicada de especialistas comprometidos em oferecer 
+            Somos uma equipe dedicada de especialistas, comprometidos em oferecer
             serviços de alta qualidade e garantir o conforto e bem-estar dos nossos clientes.
           </p>
         </div>

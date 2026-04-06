@@ -42,12 +42,12 @@ const ServicesSection = () => {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Ar-Condicionados
+            Serviços de Climatização
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Oferecemos serviços especializados para garantir o funcionamento 
-            eficiente e duradouro do seu sistema de ar condicionado.
+            Oferecemos serviços especializados para garantir o funcionamento
+            eficiente e duradouro do seu sistema de ar-condicionado.
           </p>
         </div>
 
@@ -145,7 +145,7 @@ const ServicesSection = () => {
                   rel="noopener noreferrer"
                 >
                   <Phone className="h-5 w-5" />
-                  Ligar Agora
+                  Chamar no WhatsApp
                 </a>
               </Button>
             </div>

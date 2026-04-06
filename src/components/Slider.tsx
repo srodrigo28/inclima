@@ -35,7 +35,7 @@ const portfolioItems: PortfolioItem[] = [
     id: 4,
     title: "Banco de Olhos",
     image: "assets/parceiros/instuto-olhos.jfif",
-    description: "Instituto de olhos de Goiânia",
+    description: "Instituto de Olhos de Goiânia",
   },
   {
     id: 5,
@@ -109,7 +109,7 @@ export function Slider() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
-            Conheça alguns dos nosso clientes
+            Conheça alguns dos nossos clientes
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Veja alguns atendimentos em destaque e acesse a nova vitrine completa do portfólio.

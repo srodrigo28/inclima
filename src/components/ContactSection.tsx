@@ -23,7 +23,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Localização",
-      info: "Grupo InCLima",
+      info: "Grupo In Clima",
       link: "#"
     },
     {
@@ -41,7 +41,7 @@ const ContactSection = () => {
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-secondary/10 rounded-full mb-4">
             <span className="text-sm font-medium text-secondary">
-              Entre em Contato
+              Entre em contato
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -60,13 +60,13 @@ const ContactSection = () => {
             <Card className="shadow-elegant border-0">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6 text-foreground">
-                  Solicite seu Orçamento
+                  Solicite seu orçamento
                 </h3>
                 
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="font-medium">Nome Completo</Label>
+                      <Label htmlFor="name" className="font-medium">Nome completo</Label>
                       <Input 
                         id="name" 
                         placeholder="Seu nome completo"
@@ -94,7 +94,7 @@ const ContactSection = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="service" className="font-medium">Serviço de Interesse</Label>
+                    <Label htmlFor="service" className="font-medium">Serviço de interesse</Label>
                     <select 
                       id="service" 
                       className="w-full h-10 px-3 py-2 border border-input bg-background rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-smooth"
@@ -117,7 +117,7 @@ const ContactSection = () => {
                   </div>
                   
                   <Button variant="hero" size="lg" className="w-full bg-blue-500">
-                    Enviar Solicitação
+                    Enviar solicitação
                   </Button>
                 </form>
               </CardContent>

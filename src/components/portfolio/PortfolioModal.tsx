@@ -102,7 +102,7 @@ const PortfolioModal = ({ location, onClose }: PortfolioModalProps) => {
               {!isDirectContactAvailable ? (
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   O telefone direto desta unidade ainda está sendo revisado. Você pode seguir
-                  pelo atendimento central para continuar.
+                  com o atendimento central para continuar.
                 </p>
               ) : null}
             </div>

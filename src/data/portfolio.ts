@@ -52,7 +52,7 @@ export const portfolioLocations: PortfolioLocation[] = [
   createLocation(
     "ri-happy-av-t0",
     "Ri Happy Av. T-1",
-    "Marcia",
+    "Márcia",
     "xxxx-xxxx",
     "/assets/portfolio/ri-happy.png",
     "Goiânia",
@@ -60,7 +60,7 @@ export const portfolioLocations: PortfolioLocation[] = [
   createLocation(
     "ri-happy-marista",
     "Ri Happy Marista",
-    "Marcia",
+    "Márcia",
     "xxxx-xxxx",
     "/assets/portfolio/ri-happy.png",
     "Goiânia",
@@ -68,7 +68,7 @@ export const portfolioLocations: PortfolioLocation[] = [
   createLocation(
     "ri-happy-buena-vista",
     "Ri Happy Buena Vista",
-    "Marcia",
+    "Márcia",
     "xxxx-xxxx",
     "/assets/portfolio/ri-happy-buena.png",
     "Goiânia",
@@ -76,7 +76,7 @@ export const portfolioLocations: PortfolioLocation[] = [
   createLocation(
     "ri-happy-passeio-das-aguas",
     "Ri Happy Passeio das Águas",
-    "Marcia",
+    "Márcia",
     "xxxx-xxxx",
     "/assets/portfolio/ri-happy.png",
     "Goiânia",
@@ -92,7 +92,7 @@ export const portfolioLocations: PortfolioLocation[] = [
   createLocation(
     "instituto-de-olhos",
     "Instituto de Olhos",
-    "Jose Rodrigues",
+    "José Rodrigues",
     "99225-1529",
     "/assets/portfolio/olhos.png",
     "Goiânia",
@@ -108,14 +108,14 @@ export const portfolioLocations: PortfolioLocation[] = [
   createLocation(
     "casa-fleur",
     "Casa Fleur",
-    "Giselio",
+    "Gisélio",
     "(62) 99235-2045",
     "/assets/portfolio/fleur.png",
     "Goiânia",
   ),
   createLocation(
     "prefeitura-de-turvania",
-    "Prefeitura de Turvania",
+    "Prefeitura de Turvânia",
     "Ana Carolina",
     "(62) 99169-9071",
     "/assets/portfolio/turvania.png",

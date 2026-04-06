@@ -14,7 +14,7 @@ const DifferentialsSection = () => {
     {
       icon: CheckCircle,
       title: "EFICÁCIA",
-      description: "Um resultado de excelência e com segurança.",
+      description: "Resultados de excelência com segurança.",
       color: "text-green-500"
     },
     {
@@ -85,8 +85,8 @@ const DifferentialsSection = () => {
             Conte com uma empresa que preza pelo seu bem-estar!
           </h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Entre em contato conosco e descubra como podemos ajudar você a ter 
-            o melhor para seu ar condicionado.
+            Entre em contato conosco e descubra como podemos ajudar você a ter
+            o melhor para o seu ar-condicionado.
           </p>
           <Button variant="hero" size="lg" asChild className="bg-blue-500">
             <a href="#contato" className="inline-flex items-center gap-2 bg-blue-500">
