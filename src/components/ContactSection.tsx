@@ -16,8 +16,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "E-mail",
-      info: "contato@assrefriar.com.br",
-      link: "mailto:contato@assrefriar.com.br"
+      info: "comercial@grupoinclima.com.br",
+      link: "mailto:comercial@grupoinclima.com.br"
     },
     {
       icon: MapPin,

@@ -1,4 +1,5 @@
 import type { PortfolioLocation } from "@/types/portfolio";
+import BrandName from "@/components/BrandName";
 
 type PortfolioCardProps = {
   location: PortfolioLocation;
@@ -24,7 +25,7 @@ const PortfolioCard = ({ location, onSelect }: PortfolioCardProps) => {
         >
           <div>
             <p className="mb-2 inline-flex rounded-full bg-white/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
-              Portfólio InClima
+              Portfólio <BrandName redClassName="text-red-300" />
             </p>
             <h3 className="max-w-[13ch] text-3xl font-bold leading-none text-white drop-shadow-[0_10px_24px_rgba(0,0,0,0.42)]">
               {location.name}
@@ -69,7 +70,7 @@ const PortfolioCard = ({ location, onSelect }: PortfolioCardProps) => {
       </div>
       {!location.hasDirectContact ? (
         <div className="border-t border-border/70 px-5 py-3 text-xs font-medium text-muted-foreground">
-          Contato direto da unidade em atualização. Use a central da InClima.
+          Contato direto da unidade em atualização. Use a central da <BrandName redClassName="text-red-500" />.
         </div>
       ) : null}
     </article>

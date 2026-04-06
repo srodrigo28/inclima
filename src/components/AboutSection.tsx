@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import BrandName from "@/components/BrandName";
 import { Target, Eye, Heart, ChevronRight } from "lucide-react";
 
 const AboutSection = () => {
@@ -44,7 +45,7 @@ const AboutSection = () => {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Grupo InClima é uma empresa prestadora de serviços na área de 
+                Grupo <BrandName redClassName="text-red-500" /> é uma empresa prestadora de serviços na área de{" "}
                 Ar Condicionado. Desde sua fundação, em 2014, nos dedicamos 
                 plenamente ao atendimento de nossos clientes, com eficácia e compromisso.
               </p>

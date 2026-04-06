@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import BrandName from "@/components/BrandName";
 import { Zap, CheckCircle, Shield, ChevronRight } from "lucide-react";
 
 const DifferentialsSection = () => {
@@ -31,7 +32,7 @@ const DifferentialsSection = () => {
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-accent rounded-full mb-4">
             <span className="text-sm font-medium text-accent-foreground">
-              Por que escolher o Grupo InClima Ar Condicionado
+              Por que escolher o Grupo <BrandName redClassName="text-red-500" suffix="Ar Condicionado" />
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">

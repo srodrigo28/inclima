@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import BrandName from "@/components/BrandName";
 import type { PortfolioLocation } from "@/types/portfolio";
 
 type PortfolioModalProps = {
@@ -87,11 +88,10 @@ const PortfolioModal = ({ location, onClose }: PortfolioModalProps) => {
           <div className="space-y-4">
             <div className="rounded-2xl bg-muted/60 p-4">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                Responsavel
-                
+                Responsável
               </p>
               <p className="mt-1 text-xl font-bold text-foreground">
-                {isDirectContactAvailable ? location.contactName : "Central InClima"}
+                {isDirectContactAvailable ? location.contactName : <>Central <BrandName redClassName="text-red-500" /></>}
               </p>
             </div>
             <div className="rounded-2xl bg-muted/60 p-4">

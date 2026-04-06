@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import BrandName from "@/components/BrandName";
 import logo from "@/assets/logo.png";
 import {
   Phone,
@@ -50,7 +51,9 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>Grupo InClima Goiânia</span>
+              <span>
+                Grupo <BrandName redClassName="text-red-300" suffix="Goiânia" />
+              </span>
             </div>
           </div>
         </div>
@@ -61,9 +64,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Grupo InClima" className="h-12 w-12" />
+            <img src={logo} alt="Grupo In Clima" className="h-12 w-12" />
             <div className="flex flex-col">
-              <span className="font-bold text-xl text-primary">Grupo InClima</span>
+              <BrandName className="font-bold text-xl text-primary" redClassName="text-red-500" prefix="Grupo" />
               <span className="text-sm text-muted-foreground font-medium">Ar Condicionado</span>
             </div>
           </div>

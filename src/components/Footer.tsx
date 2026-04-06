@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.png";
+import BrandName from "@/components/BrandName";
 import { useLocation } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
@@ -14,9 +15,9 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <img src={logo} alt="Grupo InClima" className="h-12 w-12" />
+              <img src={logo} alt="Grupo In Clima" className="h-12 w-12" />
               <div className="flex flex-col">
-                <span className="font-bold text-xl text-primary">Grupo InClima</span>
+                <BrandName className="font-bold text-xl text-primary" redClassName="text-red-500" prefix="Grupo" />
                 <span className="text-sm text-gray-300 font-medium">ARCONDICIONADO</span>
               </div>
             </div>
@@ -30,11 +31,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>grupoinclima@gmail.com</span>
+                <span>comercial@grupoinclima.com.br</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>Grupo InClima Goiânia Goiás</span>
+                <span>
+                  Grupo <BrandName redClassName="text-red-400" suffix="Goiânia Goiás" />
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-primary" />
@@ -72,7 +75,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div>
-              © 2025 Grupo InClima Ar Condicionado. Todos os direitos reservados.
+              © 2025 Grupo <BrandName redClassName="text-red-400" suffix="Ar Condicionado" />. Todos os direitos reservados.
             </div>
             <div className="mt-4 md:mt-0 hidden md:flex">
               Desenvolvido com ❤️ para seu conforto

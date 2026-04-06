@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BrandName from "@/components/BrandName";
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
 import PortfolioModal from "@/components/portfolio/PortfolioModal";
 import { portfolioLocations } from "@/data/portfolio";
@@ -36,7 +37,7 @@ const Portfolio = () => {
                   Portfólio
                 </p>
                 <h1 className="mt-5 max-w-3xl text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-                  Projetos e clientes atendidos pela InClima
+                  Clientes atendidos pela <BrandName redClassName="text-red-500" />
                 </h1>
                 <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
                   Uma vitrine dedicada para apresentar unidades, parceiros e pontos de atendimento
