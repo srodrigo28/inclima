@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BrandName from "@/components/BrandName";
+import { contactConfig } from "@/config/contact";
 import { Zap, CheckCircle, Shield, ChevronRight } from "lucide-react";
 
 const DifferentialsSection = () => {

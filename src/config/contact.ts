@@ -26,15 +26,28 @@ function formatBrazilPhone(phone: string) {
 
 const phoneDigits = digitsOnly(import.meta.env.VITE_CONTACT_PHONE || "");
 const email = import.meta.env.VITE_CONTACT_EMAIL || "";
+const whatsappBaseUrl = phoneDigits
+  ? `https://api.whatsapp.com/send?1=pt_BR&phone=${phoneDigits}`
+  : "#";
+
+function appendWhatsAppText(url: string, message?: string) {
+  if (!message || url === "#") {
+    return url;
+  }
+
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}text=${encodeURIComponent(message)}`;
+}
 
 export const contactConfig = {
   phoneDigits,
   phoneDisplay: formatBrazilPhone(phoneDigits),
   telUrl: phoneDigits ? `tel:+${phoneDigits}` : "#",
-  whatsappApiUrl: phoneDigits
-    ? `https://api.whatsapp.com/send?1=pt_BR&phone=${phoneDigits}`
-    : "#",
+  whatsappApiUrl: whatsappBaseUrl,
   whatsappWaUrl: phoneDigits ? `https://wa.me/${phoneDigits}` : "#",
   email,
   mailtoUrl: email ? `mailto:${email}` : "#",
+  getWhatsAppUrl(message?: string) {
+    return appendWhatsAppText(whatsappBaseUrl, message);
+  },
 };
