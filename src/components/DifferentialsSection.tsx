@@ -90,7 +90,12 @@ const DifferentialsSection = () => {
             o melhor para o seu ar-condicionado.
           </p>
           <Button variant="hero" size="lg" asChild className="bg-blue-500">
-            <a href="#contato" className="inline-flex items-center gap-2 bg-blue-500">
+            <a
+              href={contactConfig.whatsappApiUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-blue-500"
+            >
               <ChevronRight className="h-5 w-5 " />
               Solicite um orçamento
             </a>

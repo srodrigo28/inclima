@@ -4,6 +4,7 @@ import { contactConfig } from "@/config/contact";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { FormEvent } from "react";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
@@ -34,6 +35,30 @@ const ContactSection = () => {
     }
   ];
 
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = String(formData.get("name") || "").trim();
+    const phone = String(formData.get("phone") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const service = String(formData.get("service") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    const whatsappMessage = [
+      "Olá! Gostaria de solicitar um orçamento.",
+      name ? `Nome: ${name}` : "",
+      phone ? `Telefone: ${phone}` : "",
+      email ? `E-mail: ${email}` : "",
+      service ? `Serviço de interesse: ${service}` : "",
+      message ? `Detalhes: ${message}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    window.open(contactConfig.getWhatsAppUrl(whatsappMessage), "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section id="contato" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -63,12 +88,13 @@ const ContactSection = () => {
                   Solicite seu orçamento
                 </h3>
                 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="font-medium">Nome completo</Label>
                       <Input 
-                        id="name" 
+                        id="name"
+                        name="name"
                         placeholder="Seu nome completo"
                         className="transition-smooth focus:ring-2 focus:ring-primary/20"
                       />
@@ -76,7 +102,8 @@ const ContactSection = () => {
                     <div className="space-y-2">
                       <Label htmlFor="phone" className="font-medium">Telefone</Label>
                       <Input 
-                        id="phone" 
+                        id="phone"
+                        name="phone"
                         placeholder="(62) 99999-9999"
                         className="transition-smooth focus:ring-2 focus:ring-primary/20"
                       />
@@ -86,7 +113,8 @@ const ContactSection = () => {
                   <div className="space-y-2">
                     <Label htmlFor="email" className="font-medium">E-mail</Label>
                     <Input 
-                      id="email" 
+                      id="email"
+                      name="email"
                       type="email" 
                       placeholder="seu@email.com"
                       className="transition-smooth focus:ring-2 focus:ring-primary/20"
@@ -96,7 +124,8 @@ const ContactSection = () => {
                   <div className="space-y-2">
                     <Label htmlFor="service" className="font-medium">Serviço de interesse</Label>
                     <select 
-                      id="service" 
+                      id="service"
+                      name="service"
                       className="w-full h-10 px-3 py-2 border border-input bg-background rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-smooth"
                     >
                       <option value="">Selecione um serviço</option>
@@ -110,13 +139,14 @@ const ContactSection = () => {
                   <div className="space-y-2">
                     <Label htmlFor="message" className="font-medium">Mensagem</Label>
                     <Textarea 
-                      id="message" 
+                      id="message"
+                      name="message"
                       placeholder="Descreva detalhes do serviço que precisa..."
                       className="min-h-[110px] transition-smooth focus:ring-2 focus:ring-primary/20"
                     />
                   </div>
                   
-                  <Button variant="hero" size="lg" className="w-full bg-blue-500">
+                  <Button type="submit" variant="hero" size="lg" className="w-full bg-blue-500">
                     Enviar solicitação
                   </Button>
                 </form>

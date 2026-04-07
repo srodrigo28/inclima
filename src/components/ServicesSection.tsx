@@ -133,7 +133,12 @@ const ServicesSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild className="bg-blue-500">
-                <a href="#contato" className="inline-flex items-center gap-2">
+                <a
+                  href={contactConfig.whatsappApiUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
                   <ChevronRight className="h-5 w-5" />
                   Solicitar Orçamento
                 </a>
